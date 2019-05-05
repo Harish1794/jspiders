@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+
+class mobile
+{
+	String brand;
+	double price;
+	int ram;
+	mobile(String brand,double price,int ram)
+	{
+		this.brand = brand;
+		this.price = price;
+		this.ram = ram;
+	}
+}
+
+
+
+class store extends mobile
+{
+	store(String brand,double price,int ram)
+	{
+		super(brand,price,ram);
+	}
+	void print()
+	{
+		System.out.println("brand of the mobile = "+brand);
+		System.out.println("price of the mobile = "+price);
+		System.out.println("ram size of the mobile = "+ram);
+	}
+}
+class  mobilestore
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+		Scanner sc = new Scanner (System.in);
+		System.out.println("enter the brand of the mobile");
+		String brand = sc.next();
+		System.out.println("enter the price of the mobile");
+		double price = sc.nextDouble();
+		System.out.println("enter the ram size of the mobile");
+		int ram = sc.nextInt();
+		store s = new store (brand,price,ram);
+		System.out.println("***************************************");
+		System.out.println("---------------------------------------");
+		s.print();
+	}
+}

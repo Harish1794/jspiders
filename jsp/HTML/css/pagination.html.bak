@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <style>
+a
+{
+text-decoration:none;
+padding: 0 10px 0 10px;
+}
+
+#id2 a:hover:not(.acti)
+{
+font-size: 20px;
+border:solid red;
+
+}
+#id2 a.acti
+{
+font-size: 20px;
+color:white;
+ background:black;
+}
+
+ </style>
+  <title>pagination</title>
+ </head>
+ <body>
+ <div id="id1">
+  <a href="#"> << </a>
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#"> >> </a>
+</div>
+<br><br><br><br><br>
+<div id="id2">
+  <a href="#"> << </a>
+  <a href="#" class="acti">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#"> >> </a>
+</div>
+
+ </body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  
+  <title>java script</title>
+ </head>
+ <body>
+  <h1 id="hid">java script</h1>
+  <h1 id="pid"></h1>
+  <p id="pid2"></p>
+  <h2 id="h2id">hi hello</h2>
+  <button onclick="fung()">...</button>
+<button onclick="fung2()">date</button>
+<button onclick="document.getElementById('pid2').innerHTML=Date()">date2</button>
+<button onclick="this.innerHTML=Date()">date3</button>
+<button onclick="msg()">style 11 change</button>
+
+<script>
+function fung()
+{
+document.getElementById('hid').innerHTML="h1 content is changed"
+}
+
+function fung2()
+{
+	var today=new Date();
+document.getElementById('pid').innerHTML="Todays date="+today;
+
+}
+function msg()
+{
+document.getElementById('h2id').style.color="blue";
+}
+
+</script>
+ </body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <style>
+  .div1
+  {
+  width:200px;
+ height:200px;
+ background:#ff0000;
+ transition: width 2s, height 2s;
+  }
+  .div1:hover
+  {
+	 width:100px;
+     height:100px;
+ 
+ }
+ .cdiv
+ {
+ float:center;
+ width:200px;
+ height:200px;
+ background:#ffff00;
+ transition: width 2s, height 2s,transform 2s;
+ }
+ .cdiv:hover
+ {
+ width:100px;
+ height:100px;
+ transform:rotate(180deg);
+ }
+ .cdiv1
+ { 
+
+ width:200px;
+ height:200px;
+ background:red;
+ animation-name:ani1;
+ animation-duration:3s;
+
+ }
+
+ @keyframes ani1
+ {
+ from{background-color:#6633ff;}
+ to{background-color:#009900;}
+ }
+
+.cdiv2
+ { 
+ width:400px;
+ height:50px;
+ background:#ff0099;
+ position:relative;
+ animation-name:ani2;
+ animation-duration:5s;
+ animation-iteration-count:4;
+ animation-direction:alternate-reverse;
+ }
+ 
+ @keyframes ani2
+ {
+ 0%{background-color:#ff9900;left:0px;top:0px;}
+ 25%{background-color:#00cc66;left:200px;top:0px;}
+ 50%{background-color:#0000ff;left:200px;top:200px;}
+ 75%{background-color:#cc0000;left:0px;top:200px;}
+ 100%{background-color:#ccff00;left:0px;top:0px;}
+ }
+  </style>
+  <title>Transition property</title>
+ </head>
+ <body>
+  <div class="div1">
+
+
+
+
+  </div><br><br>
+   <div class="cdiv2">
+
+  </div><br><br>
+  <div class="cdiv">
+  
+  
+  </div><br><br>
+  <div class="cdiv1">
+
+  </div><br><br>
+ 
+ </body>
+</html>

@@ -1,0 +1,15 @@
+h1
+{
+color:hsla(200 ,50%,90%, 0.3);
+color:rgba(250,70,90,0.3);
+
+background:yellow;
+
+}
+body
+{
+background-image:url("C:/Users/user/Desktop/pic.png");
+background-position:top right;
+background-repeat:repeat-y;
+background-attachment:fixed;
+}
